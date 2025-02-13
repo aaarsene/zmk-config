@@ -17,16 +17,6 @@
 &lt { quick_tap_ms = <200>; };
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
-            #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -34,8 +24,8 @@
         default_layer {
             bindings = <
                 &kp Q      &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
-                &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F    &kp G         &kp H            &hm RSHFT J    &hm RCTRL K &hm LALT L &hm LGUI SINGLE_QUOTE
-                &kp Z      &hm RALT X &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &hm RALT DOT &kp FSLH
+                &kp A      &kp S      &kp D       &kp F          &kp G         &kp H            &kp J          &kp K       &kp L      &kp SINGLE_QUOTE
+                &kp Z      &kp X      &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
                                                   &kp TAB  &lt NAV_L SPACE     &lt NUM_L ENTER  &lt SYM_L BSPC
             >;
         };
